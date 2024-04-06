@@ -41,7 +41,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[20px] max-w-3xl leading-[30px]"
       >
-        I am a{" "}
+        I am a(n){" "}
         <span className="text-[#99EDC3] inline align-middle">
         <Typewriter
           options={{
