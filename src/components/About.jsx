@@ -62,7 +62,7 @@ const About = () => {
                 transition duration-600 ease-in-out no-underline hover:bg-[#915eff] hover:text-white"
                 >
                   <a
-                    href="https://drive.google.com/file/d/1XA1lRwqfaeorLcKchIP5WorVWZlgYOFI/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1OPOPjkzG4axPmELqslo8r32DKGXOvbf9/view?usp=sharing"
                     target="_blank"
                     className="text-white text-[18px] font-medium cursor-pointer"
                   >
