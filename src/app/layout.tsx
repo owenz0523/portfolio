@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Owen Zhang',
   description: 'Portfolio website.',
+  icons: {
+    icon: '/logo.svg',
+  },
 }
 
 export default function RootLayout({
