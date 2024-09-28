@@ -8,8 +8,8 @@ interface SectionProps {
 }
 
 const Section: React.FC<SectionProps> = ({ title, children }) => (
-  <div className="mb-8">
-    <h2 className="text-lg font-semibold mb-2">{title}</h2>
+  <div className="mb-8 space-y-4">
+    <h2 className="text-base font-semibold mb-2">{title}</h2>
     <div className="pl-4 border-l-2 border-gray-200 space-y-4">{children}</div>
   </div>
 );
