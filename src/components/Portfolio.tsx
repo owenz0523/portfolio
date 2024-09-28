@@ -74,7 +74,7 @@ const Portfolio: React.FC = () => {
           <p>
             Incoming Software Engineering Intern at{' '}
             <a
-              href="https://www.martinrea.com/"
+              href="https://www.shopify.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-300 dark:bg-green-600 px-1 rounded text-black"
