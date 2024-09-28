@@ -151,7 +151,7 @@ const Portfolio: React.FC = () => {
               >
               Pharmfill
               </a>
-              , winning &quot;Best Use of Redis&quot; at DeltaHacks.
+              , winner at DeltaHacks.
             </p>
             <p>Built{' '}
               <a
@@ -162,7 +162,7 @@ const Portfolio: React.FC = () => {
               >
               Beacons
               </a>
-              , winning &quot;Best Use of MongoDB&quot; at DeerHacks.
+              , winner at DeerHacks.
             </p>
         </Section>
 
