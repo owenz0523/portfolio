@@ -72,7 +72,7 @@ const Portfolio: React.FC = () => {
           <p>Hi, I&apos;m Owen.</p>
           <p>Software Engineering Student at the University of Waterloo.</p>
           <p>
-            Incoming Software Engineering Intern at{' '}
+            Software Engineering Intern at{' '}
             <a
               href="https://www.shopify.com/"
               target="_blank"
