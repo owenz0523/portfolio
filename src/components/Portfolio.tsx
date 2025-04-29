@@ -71,8 +71,12 @@ const Portfolio: React.FC = () => {
         <Section title="Intro">
           <p>Hi, I&apos;m Owen.</p>
           <p>Software Engineering Student at the University of Waterloo.</p>
+          <p>Seeking Fall 2025 opportunities!</p>
+        </Section>
+
+        <Section title="Experience">
           <p>
-            Incoming Software Engineering Intern at{' '}
+            Previously, I have worked at{' '}
             <a
               href="https://www.shopify.com/"
               target="_blank"
@@ -81,29 +85,23 @@ const Portfolio: React.FC = () => {
             >
               Shopify
             </a>
-            .
-          </p>
-        </Section>
-
-        <Section title="Experience">
-          <p>
-            Previously, I have worked at{' '}
+            ,{' '}
             <a
               href="https://www.martinrea.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-300 dark:bg-blue-600 px-1 rounded text-black"
+              className="bg-green-300 dark:bg-green-600 px-1 rounded text-black"
             >
-              Martinrea International
+              Martinrea
             </a>
-            {' '}and{' '}
+            , {' '}and{' '}
             <a
-              href="https://www.apple.com/"
+              href="https://pillthought.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-300 dark:bg-blue-600 px-1 rounded text-black"
+              className="bg-green-300 dark:bg-green-600 px-1 rounded text-black"
             >
-              Apple
+              PillThought
             </a>
             .
           </p>
@@ -116,15 +114,6 @@ const Portfolio: React.FC = () => {
               className="bg-yellow-300 dark:bg-yellow-600 px-1 rounded text-black"
             >
               WatStreet
-            </a>
-             {' '}and{' '}
-            <a
-              href="https://pillthought.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-yellow-300 dark:bg-yellow-600 px-1 rounded text-black"
-            >
-              PillThought Technologies
             </a>
             .
           </p>
@@ -142,6 +131,17 @@ const Portfolio: React.FC = () => {
               </a>
               .
               </p>
+            <p>Built{' '} 
+              <a
+                href="https://github.com/YashK2005/shoPacks"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-red-300 dark:bg-red-600 px-1 rounded text-black"
+              >
+              ShoPacks
+              </a>
+              , winner at Shopify Internal Hackathon.
+            </p>
             <p>Built{' '} 
               <a
                 href="https://devpost.com/software/pharmfill"
