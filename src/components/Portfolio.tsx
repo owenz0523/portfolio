@@ -74,12 +74,12 @@ const Portfolio: React.FC = () => {
           <p>
             Software Engineering Intern at{' '}
             <a
-              href="https://www.shopify.com/"
+              href="https://www.capitalone.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-300 dark:bg-green-600 px-1 rounded text-black"
+              className="bg-blue-300 dark:bg-blue-600 px-1 rounded text-black"
             >
-              Shopify
+              Capital One
             </a>
             .
           </p>
@@ -89,26 +89,26 @@ const Portfolio: React.FC = () => {
           <p>
             Previously, I have worked at{' '}
             <a
-              href="https://www.martinrea.com/"
+              href="https://www.shopify.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-300 dark:bg-blue-600 px-1 rounded text-black"
+              className="bg-green-300 dark:bg-green-600 px-1 rounded text-black"
             >
-              Martinrea International
+              Shopify
             </a>
             {' '}and{' '}
             <a
-              href="https://www.apple.com/"
+              href="https://www.martinrea.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-300 dark:bg-blue-600 px-1 rounded text-black"
+              className="bg-green-300 dark:bg-green-600 px-1 rounded text-black"
             >
-              Apple
+              Martinrea International
             </a>
             .
           </p>
           <p>
-            Currently working with{' '}
+            I have also done work with {' '}
             <a
               href="https://watstreet.netlify.app/"
               target="_blank"
