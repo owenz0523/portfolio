@@ -1,6 +1,6 @@
-'use client';
-import React, { useState, useEffect, ReactNode } from 'react';
-import { Moon, Sun, Github, Linkedin } from 'lucide-react';
+"use client";
+import React, { useState, useEffect, ReactNode } from "react";
+import { Moon, Sun, Github, Linkedin } from "lucide-react";
 
 interface SectionProps {
   title: string;
@@ -19,13 +19,14 @@ const Portfolio: React.FC = () => {
 
   useEffect(() => {
     const isDarkMode =
-      localStorage.getItem('darkMode') === 'true' ||
-      (!('darkMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      localStorage.getItem("darkMode") === "true" ||
+      (!("darkMode" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches);
     setDarkMode(isDarkMode);
   }, []);
 
   useEffect(() => {
-    localStorage.setItem('darkMode', darkMode ? 'true' : 'false');
+    localStorage.setItem("darkMode", darkMode ? "true" : "false");
   }, [darkMode]);
 
   const toggleDarkMode = () => {
@@ -36,8 +37,8 @@ const Portfolio: React.FC = () => {
     <div
       className="min-h-screen transition-colors duration-300"
       style={{
-        backgroundColor: darkMode ? '#000000' : '#ffffff',
-        color: darkMode ? '#ffffff' : '#000000',
+        backgroundColor: darkMode ? "#000000" : "#ffffff",
+        color: darkMode ? "#ffffff" : "#000000",
       }}
     >
       <div className="max-w-2xl mx-auto p-6 font-sans space-y-8">
@@ -47,7 +48,7 @@ const Portfolio: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-gray-700"
-            style={{ color: darkMode ? '#a0aec0' : '#4a5568' }}
+            style={{ color: darkMode ? "#a0aec0" : "#4a5568" }}
           >
             <Github size={24} />
           </a>
@@ -56,23 +57,39 @@ const Portfolio: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-gray-700"
-            style={{ color: darkMode ? '#a0aec0' : '#4a5568' }}
+            style={{ color: darkMode ? "#a0aec0" : "#4a5568" }}
           >
             <Linkedin size={24} />
           </a>
           <button
             onClick={toggleDarkMode}
-            style={{ color: darkMode ? '#a0aec0' : '#4a5568' }}
+            style={{ color: darkMode ? "#a0aec0" : "#4a5568" }}
           >
             {darkMode ? <Sun size={24} /> : <Moon size={24} />}
           </button>
         </div>
 
         <Section title="Intro">
-          <p>Hi, I&apos;m Owen.</p>
-          <p>Software Engineering Student at the University of Waterloo.</p>
+          <p>hi, i&apos;m Owen.</p>
+          <p>software engineering student at the university of waterloo.</p>
           <p>
-            Software Engineering Intern at{' '}
+            incoming software engineering intern at{" "}
+            <a
+              href="https://www.databricks.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-red-400 dark:bg-red-600-600 px-1 rounded text-black"
+            >
+              DataBricks
+            </a>
+            .
+          </p>
+          <p>open to 2027 opportunities.</p>
+        </Section>
+
+        <Section title="Experience">
+          <p>
+            previously, i have worked at{" "}
             <a
               href="https://www.capitalone.com/"
               target="_blank"
@@ -80,14 +97,8 @@ const Portfolio: React.FC = () => {
               className="bg-blue-300 dark:bg-blue-600 px-1 rounded text-black"
             >
               Capital One
-            </a>
-            .
-          </p>
-        </Section>
-
-        <Section title="Experience">
-          <p>
-            Previously, I have worked at{' '}
+            </a>{" "}
+            ,{" "}
             <a
               href="https://www.shopify.com/"
               target="_blank"
@@ -95,20 +106,20 @@ const Portfolio: React.FC = () => {
               className="bg-green-300 dark:bg-green-600 px-1 rounded text-black"
             >
               Shopify
-            </a>
-            {' '}and{' '}
+            </a>{" "}
+            and{" "}
             <a
               href="https://www.martinrea.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-300 dark:bg-green-600 px-1 rounded text-black"
+              className="bg-gray-300 dark:bg-gray-600 px-1 rounded text-black"
             >
               Martinrea International
             </a>
             .
           </p>
           <p>
-            I have also done work with {' '}
+            i have also done work with{" "}
             <a
               href="https://watstreet.netlify.app/"
               target="_blank"
@@ -116,8 +127,8 @@ const Portfolio: React.FC = () => {
               className="bg-yellow-300 dark:bg-yellow-600 px-1 rounded text-black"
             >
               WatStreet
-            </a>
-             {' '}and{' '}
+            </a>{" "}
+            and{" "}
             <a
               href="https://pillthought.com/"
               target="_blank"
@@ -131,39 +142,42 @@ const Portfolio: React.FC = () => {
         </Section>
 
         <Section title="Other Things">
-            <p>Top 5 in North America at{' '}
-              <a
-                href="https://www.citadel.com/careers/students/terminal/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-red-300 dark:bg-red-600 px-1 rounded text-black"
-              >
+          <p>
+            top 5 in North America at{" "}
+            <a
+              href="https://www.citadel.com/careers/students/terminal/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-pink-300 dark:bg-pink-600 px-1 rounded text-black"
+            >
               Citadel Summer Terminal 2024
-              </a>
-              .
-              </p>
-            <p>Built{' '} 
-              <a
-                href="https://devpost.com/software/pharmfill"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-red-300 dark:bg-red-600 px-1 rounded text-black"
-              >
+            </a>
+            .
+          </p>
+          <p>
+            built{" "}
+            <a
+              href="https://devpost.com/software/pharmfill"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-pink-300 dark:bg-pink-600 px-1 rounded text-black"
+            >
               Pharmfill
-              </a>
-              , winner at DeltaHacks.
-            </p>
-            <p>Built{' '}
-              <a
-                href="https://devpost.com/software/beakons"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-red-300 dark:bg-red-600 px-1 rounded text-black"
-              >
+            </a>
+            , winner at DeltaHacks.
+          </p>
+          <p>
+            built{" "}
+            <a
+              href="https://devpost.com/software/beakons"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-pink-300 dark:bg-pink-600 px-1 rounded text-black"
+            >
               Beacons
-              </a>
-              , winner at DeerHacks.
-            </p>
+            </a>
+            , winner at DeerHacks.
+          </p>
         </Section>
 
         <Section title="Emails">
