@@ -78,7 +78,7 @@ const Portfolio: React.FC = () => {
               href="https://www.databricks.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-red-400 dark:bg-red-600-600 px-1 rounded text-black"
+              className="bg-red-200 dark:bg-red-500 px-1 rounded text-black"
             >
               DataBricks
             </a>
@@ -94,7 +94,7 @@ const Portfolio: React.FC = () => {
               href="https://www.capitalone.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-300 dark:bg-blue-600 px-1 rounded text-black"
+              className="bg-blue-200 dark:bg-blue-500 px-1 rounded text-black"
             >
               Capital One
             </a>{" "}
@@ -103,7 +103,7 @@ const Portfolio: React.FC = () => {
               href="https://www.shopify.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-300 dark:bg-green-600 px-1 rounded text-black"
+              className="bg-green-200 dark:bg-green-500 px-1 rounded text-black"
             >
               Shopify
             </a>{" "}
@@ -112,7 +112,7 @@ const Portfolio: React.FC = () => {
               href="https://www.martinrea.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gray-300 dark:bg-gray-600 px-1 rounded text-black"
+              className="bg-gray-200 dark:bg-gray-500 px-1 rounded text-black"
             >
               Martinrea International
             </a>
@@ -124,7 +124,7 @@ const Portfolio: React.FC = () => {
               href="https://watstreet.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-yellow-300 dark:bg-yellow-600 px-1 rounded text-black"
+              className="bg-yellow-200 dark:bg-yellow-500 px-1 rounded text-black"
             >
               WatStreet
             </a>{" "}
@@ -133,7 +133,7 @@ const Portfolio: React.FC = () => {
               href="https://pillthought.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-yellow-300 dark:bg-yellow-600 px-1 rounded text-black"
+              className="bg-yellow-200 dark:bg-yellow-500 px-1 rounded text-black"
             >
               PillThought Technologies
             </a>
@@ -148,7 +148,7 @@ const Portfolio: React.FC = () => {
               href="https://www.citadel.com/careers/students/terminal/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-pink-300 dark:bg-pink-600 px-1 rounded text-black"
+              className="bg-pink-200 dark:bg-pink-500 px-1 rounded text-black"
             >
               Citadel Summer Terminal 2024
             </a>
@@ -160,7 +160,7 @@ const Portfolio: React.FC = () => {
               href="https://devpost.com/software/pharmfill"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-pink-300 dark:bg-pink-600 px-1 rounded text-black"
+              className="bg-pink-200 dark:bg-pink-500 px-1 rounded text-black"
             >
               Pharmfill
             </a>
@@ -172,7 +172,7 @@ const Portfolio: React.FC = () => {
               href="https://devpost.com/software/beakons"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-pink-300 dark:bg-pink-600 px-1 rounded text-black"
+              className="bg-pink-200 dark:bg-pink-500 px-1 rounded text-black"
             >
               Beacons
             </a>
