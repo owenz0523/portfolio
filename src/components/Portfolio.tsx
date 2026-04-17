@@ -42,7 +42,7 @@ const PreviewLink: React.FC<PreviewLinkProps> = ({
       {children}
     </a>
     <span
-      className="pointer-events-none absolute left-0 top-full z-10 mt-2 w-max max-w-sm rounded-md px-2 py-1 text-xs shadow-lg opacity-0 transform scale-95 transition-all duration-150 group-hover:opacity-100 group-hover:scale-100 group-focus-within:opacity-100 group-focus-within:scale-100"
+      className="pointer-events-none absolute left-0 top-full z-10 mt-2 w-max max-w-sm rounded-md px-2 py-1 text-xs shadow-lg opacity-0 transform scale-95 transition-all duration-150 group-hover:opacity-100 group-hover:scale-100"
       style={{
         backgroundColor: darkMode ? "#1a202c" : "#f7fafc",
         border: `1px solid ${darkMode ? "#4a5568" : "#cbd5e0"}`,
