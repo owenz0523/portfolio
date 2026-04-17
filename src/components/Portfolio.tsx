@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, ReactNode } from "react";
+import React, { useState, useEffect, ReactNode, CSSProperties } from "react";
 import { Moon, Sun, Github, Linkedin } from "lucide-react";
 
 interface SectionProps {
@@ -12,6 +12,47 @@ const Section: React.FC<SectionProps> = ({ title, children }) => (
     <h2 className="text-base font-semibold mb-2">{title}</h2>
     <div className="pl-4 border-l-2 border-gray-200 space-y-4">{children}</div>
   </div>
+);
+
+interface PreviewLinkProps {
+  href: string;
+  children: ReactNode;
+  darkMode: boolean;
+  className?: string;
+  style?: CSSProperties;
+  previewLabel?: string;
+}
+
+const PreviewLink: React.FC<PreviewLinkProps> = ({
+  href,
+  children,
+  darkMode,
+  className,
+  style,
+  previewLabel,
+}) => (
+  <span className="relative inline-flex group">
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={className}
+      style={style}
+    >
+      {children}
+    </a>
+    <span
+      className="pointer-events-none absolute left-0 top-full z-10 mt-2 w-max max-w-sm rounded-md px-2 py-1 text-xs shadow-lg opacity-0 transform scale-95 transition-all duration-150 group-hover:opacity-100 group-hover:scale-100 group-focus-within:opacity-100 group-focus-within:scale-100"
+      style={{
+        backgroundColor: darkMode ? "#1a202c" : "#f7fafc",
+        border: `1px solid ${darkMode ? "#4a5568" : "#cbd5e0"}`,
+        color: darkMode ? "#e2e8f0" : "#2d3748",
+      }}
+    >
+      <span className="block">{previewLabel ?? href}</span>
+      <span className="block text-[11px] opacity-80">Opens in a new tab</span>
+    </span>
+  </span>
 );
 
 const Portfolio: React.FC = () => {
@@ -43,24 +84,24 @@ const Portfolio: React.FC = () => {
     >
       <div className="max-w-2xl mx-auto p-6 font-sans space-y-8">
         <div className="flex justify-between items-center mb-8">
-          <a
+          <PreviewLink
             href="https://github.com/owenz0523"
-            target="_blank"
-            rel="noopener noreferrer"
+            darkMode={darkMode}
             className="text-gray-500 hover:text-gray-700"
             style={{ color: darkMode ? "#a0aec0" : "#4a5568" }}
+            previewLabel="github.com/owenz0523"
           >
             <Github size={24} />
-          </a>
-          <a
+          </PreviewLink>
+          <PreviewLink
             href="https://www.linkedin.com/in/owenzhang052"
-            target="_blank"
-            rel="noopener noreferrer"
+            darkMode={darkMode}
             className="text-gray-500 hover:text-gray-700"
             style={{ color: darkMode ? "#a0aec0" : "#4a5568" }}
+            previewLabel="linkedin.com/in/owenzhang052"
           >
             <Linkedin size={24} />
-          </a>
+          </PreviewLink>
           <button
             onClick={toggleDarkMode}
             style={{ color: darkMode ? "#a0aec0" : "#4a5568" }}
@@ -84,14 +125,14 @@ const Portfolio: React.FC = () => {
           <p>Software Engineering Student at the University of Waterloo.</p>
           <p>
             Incoming Software Engineering Intern at{" "}
-            <a
+            <PreviewLink
               href="https://www.databricks.com/"
-              target="_blank"
-              rel="noopener noreferrer"
+              darkMode={darkMode}
               className="bg-red-200 dark:bg-red-500 px-1 rounded text-black"
+              previewLabel="databricks.com"
             >
               DataBricks
-            </a>
+            </PreviewLink>
             .
           </p>
           <p>Open to 2027 opportunities.</p>
@@ -100,32 +141,32 @@ const Portfolio: React.FC = () => {
         <Section title="Experience">
           <p>
             Previously, I have worked at{" "}
-            <a
+            <PreviewLink
               href="https://www.capitalone.com/"
-              target="_blank"
-              rel="noopener noreferrer"
+              darkMode={darkMode}
               className="bg-blue-200 dark:bg-blue-500 px-1 rounded text-black"
+              previewLabel="capitalone.com"
             >
               Capital One
-            </a>{" "}
+            </PreviewLink>{" "}
             ,{" "}
-            <a
+            <PreviewLink
               href="https://www.shopify.com/"
-              target="_blank"
-              rel="noopener noreferrer"
+              darkMode={darkMode}
               className="bg-green-200 dark:bg-green-500 px-1 rounded text-black"
+              previewLabel="shopify.com"
             >
               Shopify
-            </a>{" "}
+            </PreviewLink>{" "}
             and{" "}
-            <a
+            <PreviewLink
               href="https://www.martinrea.com/"
-              target="_blank"
-              rel="noopener noreferrer"
+              darkMode={darkMode}
               className="bg-gray-200 dark:bg-gray-500 px-1 rounded text-black"
+              previewLabel="martinrea.com"
             >
               Martinrea International
-            </a>
+            </PreviewLink>
             .
           </p>
         </Section>
@@ -133,38 +174,38 @@ const Portfolio: React.FC = () => {
         <Section title="Other Things">
           <p>
             Top 5 in North America at{" "}
-            <a
+            <PreviewLink
               href="https://www.citadel.com/careers/students/terminal/"
-              target="_blank"
-              rel="noopener noreferrer"
+              darkMode={darkMode}
               className="bg-pink-200 dark:bg-pink-500 px-1 rounded text-black"
+              previewLabel="citadel.com/careers/students/terminal"
             >
               Citadel Summer Terminal 2024
-            </a>
+            </PreviewLink>
             .
           </p>
           <p>
             Built{" "}
-            <a
+            <PreviewLink
               href="https://devpost.com/software/pharmfill"
-              target="_blank"
-              rel="noopener noreferrer"
+              darkMode={darkMode}
               className="bg-pink-200 dark:bg-pink-500 px-1 rounded text-black"
+              previewLabel="devpost.com/software/pharmfill"
             >
               Pharmfill
-            </a>
+            </PreviewLink>
             , winner at DeltaHacks.
           </p>
           <p>
             Built{" "}
-            <a
+            <PreviewLink
               href="https://devpost.com/software/beakons"
-              target="_blank"
-              rel="noopener noreferrer"
+              darkMode={darkMode}
               className="bg-pink-200 dark:bg-pink-500 px-1 rounded text-black"
+              previewLabel="devpost.com/software/beakons"
             >
               Beacons
-            </a>
+            </PreviewLink>
             , winner at DeerHacks.
           </p>
         </Section>
