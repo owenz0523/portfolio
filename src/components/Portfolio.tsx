@@ -69,11 +69,21 @@ const Portfolio: React.FC = () => {
           </button>
         </div>
 
+        <div className="mb-8 w-1/2 mx-auto">
+          <div className="h-20 overflow-hidden rounded-lg">
+            <img
+              src={darkMode ? "/dark.jpg" : "/light.jpg"}
+              alt="Portfolio"
+              className="h-full w-full object-cover"
+            />
+          </div>
+        </div>
+
         <Section title="Intro">
-          <p>hi, i&apos;m Owen.</p>
-          <p>software engineering student at the university of waterloo.</p>
+          <p>Hi, I&apos;m Owen.</p>
+          <p>Software Engineering Student at the University of Waterloo.</p>
           <p>
-            incoming software engineering intern at{" "}
+            Incoming Software Engineering Intern at{" "}
             <a
               href="https://www.databricks.com/"
               target="_blank"
@@ -84,12 +94,12 @@ const Portfolio: React.FC = () => {
             </a>
             .
           </p>
-          <p>open to 2027 opportunities.</p>
+          <p>Open to 2027 opportunities.</p>
         </Section>
 
         <Section title="Experience">
           <p>
-            previously, i have worked at{" "}
+            Previously, I have worked at{" "}
             <a
               href="https://www.capitalone.com/"
               target="_blank"
@@ -118,32 +128,11 @@ const Portfolio: React.FC = () => {
             </a>
             .
           </p>
-          <p>
-            i have also done work with{" "}
-            <a
-              href="https://watstreet.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-yellow-200 dark:bg-yellow-500 px-1 rounded text-black"
-            >
-              WatStreet
-            </a>{" "}
-            and{" "}
-            <a
-              href="https://pillthought.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-yellow-200 dark:bg-yellow-500 px-1 rounded text-black"
-            >
-              PillThought Technologies
-            </a>
-            .
-          </p>
         </Section>
 
         <Section title="Other Things">
           <p>
-            top 5 in North America at{" "}
+            Top 5 in North America at{" "}
             <a
               href="https://www.citadel.com/careers/students/terminal/"
               target="_blank"
@@ -155,7 +144,7 @@ const Portfolio: React.FC = () => {
             .
           </p>
           <p>
-            built{" "}
+            Built{" "}
             <a
               href="https://devpost.com/software/pharmfill"
               target="_blank"
@@ -167,7 +156,7 @@ const Portfolio: React.FC = () => {
             , winner at DeltaHacks.
           </p>
           <p>
-            built{" "}
+            Built{" "}
             <a
               href="https://devpost.com/software/beakons"
               target="_blank"
