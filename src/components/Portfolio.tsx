@@ -72,6 +72,13 @@ const Portfolio: React.FC = () => {
     localStorage.setItem("darkMode", darkMode ? "true" : "false");
   }, [darkMode]);
 
+  useEffect(() => {
+    ["/light.jpg", "/dark.jpg"].forEach((imageSrc) => {
+      const image = new window.Image();
+      image.src = imageSrc;
+    });
+  }, []);
+
   const toggleDarkMode = () => {
     setDarkMode((prevMode) => !prevMode);
   };
@@ -118,6 +125,7 @@ const Portfolio: React.FC = () => {
               src={darkMode ? "/dark.jpg" : "/light.jpg"}
               alt="Portfolio"
               className="h-full w-full object-cover"
+              loading="eager"
             />
           </div>
         </div>
